@@ -11,6 +11,7 @@
 		867472152C266680001889F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867472142C266680001889F1 /* ContentView.swift */; };
 		867472172C266682001889F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867472162C266682001889F1 /* Assets.xcassets */; };
 		8674721A2C266682001889F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867472192C266682001889F1 /* Preview Assets.xcassets */; };
+		867472232C266DAB001889F1 /* Awesome in Frameworks */ = {isa = PBXBuildFile; productRef = 867472222C266DAB001889F1 /* Awesome */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		867472142C266680001889F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		867472162C266682001889F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		867472192C266682001889F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		867472202C266B53001889F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867472232C266DAB001889F1 /* Awesome in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		867472112C266680001889F1 /* URLS */ = {
 			isa = PBXGroup;
 			children = (
+				867472202C266B53001889F1 /* Info.plist */,
 				867472122C266680001889F1 /* URLSApp.swift */,
 				867472142C266680001889F1 /* ContentView.swift */,
 				867472162C266682001889F1 /* Assets.xcassets */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = URLS;
+			packageProductDependencies = (
+				867472222C266DAB001889F1 /* Awesome */,
+			);
 			productName = URLS;
 			productReference = 8674720F2C266680001889F1 /* URLS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 867472062C266680001889F1;
+			packageReferences = (
+				867472212C266DAB001889F1 /* XCRemoteSwiftPackageReference "Awesome" */,
+			);
 			productRefGroup = 867472102C266680001889F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,6 +280,7 @@
 				DEVELOPMENT_TEAM = 567FDZM4P9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = URLS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +310,7 @@
 				DEVELOPMENT_TEAM = 567FDZM4P9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = URLS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		867472212C266DAB001889F1 /* XCRemoteSwiftPackageReference "Awesome" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LiveUI/Awesome";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		867472222C266DAB001889F1 /* Awesome */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 867472212C266DAB001889F1 /* XCRemoteSwiftPackageReference "Awesome" */;
+			productName = Awesome;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 867472072C266680001889F1 /* Project object */;
 }
